@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define D1 10
-#define D2 15
+#define D1 2
+#define D2 2
 int main(){
 
     int i, j, M[D1][D2], x = 0, y, z;

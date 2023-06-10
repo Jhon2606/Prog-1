@@ -5,7 +5,7 @@
 #define D3 3
 int main(){
 
-    int i, j, M[D1][D2], S = 0;
+    int i, j, M[D1][D2];
 
     for(i = 0; i < D3; i++){
         for(j = 0; j < D2; j++){

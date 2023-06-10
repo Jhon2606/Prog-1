@@ -2,10 +2,9 @@
 
 #define D1 2
 #define D2 5
-#define TAM 75
 int main(){
 
-    int i, j, M[D1][D2], e, k, l, c, vet[TAM], p;
+    int i, j, M[D1][D2], e, k, l, c;
 
     for(i = 0; i < D1; i++){
         for(j = 0; j < D2; j++){
@@ -34,10 +33,11 @@ int main(){
          if( c > 1){
             printf("O elemento %d aparece %d vezes em M.\n", e, c);
 
+
             }
          }
         }
-    }
+
 
 
     return 0;
