@@ -9,7 +9,7 @@ int main(){
         printf("Digite um numero:\n");
         scanf("%d", &vet[i]);
     }
-    for(i = TAM - 1; i >= 0; i--){
+    for(i = TAM; i >= 0; i--){
         printf("%d\n", vet[i]);
     }
     return 0;

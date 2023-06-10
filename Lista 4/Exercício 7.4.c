@@ -3,7 +3,7 @@
 #define A 3
 int main(){
 
-    int vetA[A], i, vetB[A], vetC[A];
+    int vetA[A], i;
 
     for(i = 0; i < A; i++){
         printf("Digite um numero:\n");

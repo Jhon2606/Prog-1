@@ -15,8 +15,7 @@ int main(){
 
     }
     for(i = 0; i < TAM; i++){
-        printf("%d + %d = %d\n", vet1[i], vet2[i]
-               , vet3[i]);
+        printf("%d + %d = %d\n", vet1[i], vet2[i], vet3[i]);
     }
 
 
