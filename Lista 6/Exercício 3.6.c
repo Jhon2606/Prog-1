@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define A 2
-#define D 6
+#define D 2
 typedef struct aluno{
 int matricula;
 char nome[20];
@@ -52,7 +52,42 @@ int main(){
     scanf("%d", &y);
 
     switch(y){
-        case la[0].matricula
+    case 1:
+        for(i = 0; i < A; i++){
+        printf("Digite o nome do aluno:");
+        scanf("%s", la[i].nome);
+        printf("Digite a matricula:");
+        scanf("%d", la[i].matricula);
+        x = 0;
+    for(j = 0; j < D; j++){
+        printf("Digite a nota final na disciplina [%d]", j + 1);
+        scanf("%f", &la[i].notf[j]);
+        x += la[i].notf[j];
+    }
+    la[i].medf = x / D;
+    }
+    printf("Listagem de alunos:\n");
+    for(i = 0; i < A; i++){
+        printf("Aluno: %s\n", la[i].nome);
+        printf("Matricula: %d\n", la[i].matricula);
+        printf("Media final: %.2f\n", la[i].medf);
+        printf("-----------------------\n");
+    }
+    break;
+    case 2:
+        printf("Alunos com a nota acima do que foi indicado:\n");
+    for(i = 0; i < A; i++){
+            if(la[i].medf > p){
+                printf("Aluno: %s\n", la[i].nome);
+                printf("Matricula: %d\n", la[i].matricula);
+                printf("Nota: %.2f\n", la[i].medf);
+                printf("-----------------------\n");
+
+            }
+    }
+    break;
+    default:
+        printf("Opcao invalida.\n");
     }
     return 0;
 }
