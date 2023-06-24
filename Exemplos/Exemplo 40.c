@@ -31,7 +31,7 @@ int main(){
    return 0;
 }
 
-int soma2num (int a, int b){
+int soma2num(int a, int b){
    int s;
 
    s = a + b;
