@@ -20,6 +20,6 @@ return 0;
 void repete(char a[], int b){
     int i;
         for(i = 0; i < b; i++){
-        printf("%s", a);
+        printf("%s\n", a);
 }
 }
