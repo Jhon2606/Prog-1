@@ -12,8 +12,6 @@ int main (){
 
     troca(&x, &y);
 
-    printf("O valor trocado x e:%d e o de y e:%d\n", x, y);
-
     return 0;
 }
 void troca(int *a, int *b){
@@ -23,5 +21,6 @@ void troca(int *a, int *b){
     *a = *b;
     *b = c;
 
-    return c;
+    printf("O valor trocado x e:%d e o de y e:%d\n", *a, *b);
+
 }
