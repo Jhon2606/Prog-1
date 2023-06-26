@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void potencia(float a);
+float potencia(float a);
 int main(){
 
     float cubo;
@@ -8,14 +8,14 @@ int main(){
     printf("Digite o valor do comprimeto, largura e altura do cubo:\n");
     scanf("%f", &cubo);
 
-    potencia(cubo);
+    printf("A area do cubo e de: %.f\n", potencia(cubo));
 
     return 0;
 }
-void potencia(float a){
+float potencia(float a){
 
     float b;
 
         b = a * a * a;
-            printf("A area do cubo e de: %.2f\n", b);
+    return b;
 }
