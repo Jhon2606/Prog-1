@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float METADE(float N);
+void METADE(float N);
 int main() {
     
     float p;
@@ -13,9 +13,9 @@ int main() {
     return 0;
 }
 
-float METADE(float N){
+void METADE(float N){
     float i;
     i = N/2;
     printf("A metade de %.f e %.2f", N, i);
-    return i;
+    
 }
