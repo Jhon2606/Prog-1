@@ -3,37 +3,37 @@
 #define TAM 4
 
 
-void vet(float *V);
-void METADE(float *V);
+float vet(float *V);
+float METADE(float *V);
 
 int main() {
     float p[TAM];
     int i;
-    
+
     vet(p);
     METADE(p);
-    
+
     printf("Vetor dividido plea metade:\n");
     for(i = 0; i < TAM; i++){
         printf("%.2f ", p[i]);
     }
     printf("\n");
-    
+
     return 0;
 }
 
-void vet(float *V){
+float vet(float *V){
     int i;
-    
+
     for(i = 0; i < TAM; i++){
         printf("Digite o elemento %d:\n", i + 1);
         scanf("%f", &V[i]);
     }
 }
 
-void METADE(float *V){
+float METADE(float *V){
     int i;
-    
+
     for(i = 0; i < TAM; i++){
         V[i] = V[i] / 2;
     }
