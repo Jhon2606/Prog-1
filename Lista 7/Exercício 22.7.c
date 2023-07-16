@@ -3,8 +3,8 @@
 #define d1 2
 #define d2 2
 
-int lerM(int V[][d2], int V1[][d2]);
-int somaM(int V[][d2], int V1[][d2], int s[][d2]);
+void lerM(int V[][d2], int V1[][d2]);
+void somaM(int V[][d2], int V1[][d2], int s[][d2]);
 void imprimir(int s[][d2]);
 
 int main(){
@@ -17,7 +17,7 @@ int main(){
     return 0;
 }
 
-int lerM(int V[][d2], int V1[][d2]){
+void lerM(int V[][d2], int V1[][d2]){
 
     int i, j;
 
@@ -34,10 +34,9 @@ int lerM(int V[][d2], int V1[][d2]){
             scanf("%d", &V1[i][j]);
         }
     }
-    return i;
 }
 
-int somaM(int V[][d2], int V1[][d2], int s[][d2]){
+void somaM(int V[][d2], int V1[][d2], int s[][d2]){
 
     int i, j;
 
@@ -46,8 +45,6 @@ int somaM(int V[][d2], int V1[][d2], int s[][d2]){
          s[i][j] = V[i][j] + V1[i][j];
         }
     }
-
-    return i;
 }
 
 void imprimir(int s[][d2]){

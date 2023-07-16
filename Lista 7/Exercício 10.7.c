@@ -1,17 +1,22 @@
 #include <stdio.h>
 
+void ler(int n1);
 void SINAL(int N);
+
 int main(){
 
     int n;
 
-    printf("Digite um valor:\n");
-    scanf("%d", &n);
-
-    SINAL(n);
-
+    ler(n);
 
     return 0;
+}
+void ler(int n1){
+
+    printf("Digite um valor:\n");
+    scanf("%d", &n1);
+
+    SINAL(n1);
 }
 void SINAL(int N){
 

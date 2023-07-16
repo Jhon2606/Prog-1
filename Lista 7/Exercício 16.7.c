@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 #define M 3
+#define G 10
 typedef struct aluno{
-
     int nome[20];
     float V[M], V1;
 }Aluno;
 
-int ler(Aluno li[], int tam);
-float media(Aluno li[], int tam);
-void exibir(Aluno li[], int tam);
-
+void ler(Aluno li[], int tam, int *p);
+void media(Aluno li[], int tam, int g);
+void exibir(Aluno li[], int p);
 int main(){
 
-    Aluno la[100];
-    int y1;
+    Aluno la[G];
+    int P = 0;
 
-
-    y1 = ler(la, 100);
-    media(la, y1);
-    exibir(la, y1);
+    ler(la, G, &P);
+    media(la, P, M);
+    exibir(la, P);
 
     return 0;
 }
 
-
-int ler(Aluno li[], int tam){
+void ler(Aluno li[], int tam, int *p){
 
     int i;
 
@@ -39,30 +36,28 @@ int ler(Aluno li[], int tam){
         for (int j = 0; j < M; j++) {
             printf("Nota na prova %d: ", j + 1);
             scanf("%f", &li[i].V[j]);
-}
-}
-return i;
+        }
+        (*p)++;
+    }
 }
 
-
-float media(Aluno li[], int tam){
+void media(Aluno li[], int tam, int m){
 
     int i, j;
     for(i = 0; i < tam; i++){
             float X = 0;
-        for(j = 0; j < tam; j++){
+        for(j = 0; j < m; j++){
         X += li[i].V[j];
     }
-        li[i].V1 = X/3;
+        li[i].V1 = X/m;
+    }
 }
 
-    return i;
-}
-void exibir(Aluno li[], int tam){
+void exibir(Aluno li[], int p){
 
     int i;
 
-    for(i = 0; i < tam; i++){
+    for(i = 0; i < p; i++){
             printf("O aluno %s tem media final de: %.2f\n", li[i].nome, li[i].V1);
         }
 }

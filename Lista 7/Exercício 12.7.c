@@ -1,17 +1,16 @@
 #include <stdio.h>
-
 #define TAM 4
 
-
-float vet(float *V);
-float METADE(float *V);
+void vet(float V[], int tam);
+void METADE(float V[], int tam);
 
 int main() {
+
     float p[TAM];
     int i;
 
-    vet(p);
-    METADE(p);
+    vet(p, TAM);
+    METADE(p, TAM);
 
     printf("Vetor dividido plea metade:\n");
     for(i = 0; i < TAM; i++){
@@ -22,19 +21,21 @@ int main() {
     return 0;
 }
 
-float vet(float *V){
+void vet(float V[], int tam){
+
     int i;
 
-    for(i = 0; i < TAM; i++){
+    for(i = 0; i < tam; i++){
         printf("Digite o elemento %d:\n", i + 1);
         scanf("%f", &V[i]);
     }
 }
 
-float METADE(float *V){
+void METADE(float V[], int tam){
+
     int i;
 
-    for(i = 0; i < TAM; i++){
+    for(i = 0; i < tam; i++){
         V[i] = V[i] / 2;
     }
 }

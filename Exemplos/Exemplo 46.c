@@ -1,4 +1,4 @@
-#include <stdio.h>
+4#include <stdio.h>
 
 void imprimeNumeros(int m, int n);
 void troca(int m, int n);

@@ -4,7 +4,7 @@
     #define N1 3
     #define K1 4
 
-    int matriz(int M[][N1], int M2[][K1], int M3[][K1]);
+void matriz(int M[][N1], int M2[][K1], int M3[][K1]);
 
     int main(){
 
@@ -36,7 +36,7 @@
     return 0;
     }
 
-    int matriz(int M[][N1],int M2[][K1], int M3[][K1]){
+    void matriz(int M[][N1],int M2[][K1], int M3[][K1]){
 
         int i, j;
 
@@ -45,5 +45,4 @@
               M3[i][j] = M[i][j] * M2[i][j];
             }
         }
-        return i;
     }

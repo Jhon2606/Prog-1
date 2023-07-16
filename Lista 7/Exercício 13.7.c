@@ -18,6 +18,7 @@ int main(){
 
     return 0;
 }
+
 float media(float x, float y, float z){
 
     float med;

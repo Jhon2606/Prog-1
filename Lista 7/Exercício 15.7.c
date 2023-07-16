@@ -2,11 +2,11 @@
 
 #define VET 4
 
-int mms(int *maior, int *menor, int *soma, int S[VET]);
+void mms(int *maior, int *menor, int *soma, int S[]);
 
 int main(){
 
-    int ma = 0, me = 9999, s = 0, V[VET], i;
+    int ma = 0, me, s = 0, V[VET], i;
 
     for(i = 0; i < VET; i++) {
     printf("Digite um valor:\n");
@@ -20,10 +20,10 @@ int main(){
 
     return 0;
 }
-int mms(int *maior, int *menor, int *soma, int S[VET]){
+void mms(int *maior, int *menor, int *soma, int S[]){
 
     int i;
-
+    *menor = S[0];
     for(i = 0; i < VET; i++){
         if(S[i] > *maior ){
             *maior = S[i];
@@ -33,6 +33,4 @@ int mms(int *maior, int *menor, int *soma, int S[VET]){
         }
         *soma += S[i];
     }
-
-    return i;
 }

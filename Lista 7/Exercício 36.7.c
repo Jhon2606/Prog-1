@@ -12,8 +12,6 @@ int main(){
     printf("Digite um valor:\n");
     scanf("%d", &n2);
 
-    maior(n1, n2);
-
     printf("O maior numero e: %d\n", maior(n1, n2));
 
     return 0;

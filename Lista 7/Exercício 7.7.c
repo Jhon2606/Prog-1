@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int espaco(char *a);
+int espaco(char a[]);
 int main(){
 
     char S[20];
@@ -14,14 +14,14 @@ int main(){
 
     return 0;
 }
-int espaco(char *a){
+int espaco(char a[]){
 
     int i, j = 0;
 
     for(i = 0; a[i] != '\0'; i++){
     if(a[i] == ' '){
-        j++;
-    }
+            j++;
+        }
     }
     return j;
 }

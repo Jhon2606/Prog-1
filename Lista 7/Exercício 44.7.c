@@ -20,7 +20,7 @@ int fib(int a){
         fi = 1;
     }
     if( a >= 3){
-        fi = fib(a - 1)+fib(a -2);
+        fi = fib(a - 1)+fib(a - 2);
     }
 
     return fi;

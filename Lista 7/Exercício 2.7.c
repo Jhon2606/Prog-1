@@ -21,5 +21,5 @@ void repete(char a[], int b){
     int i;
         for(i = 0; i < b; i++){
         printf("%s\n", a);
-}
+    }
 }
